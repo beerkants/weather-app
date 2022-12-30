@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Weather App</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    
+    <div class="bg-image"></div>
+    <header id="header" class="main_header">
+        <div class="container">
+            <nav id="main_nav">
+                <div id="main-logo">
+                    <a href="index.html" class="logo_container">
+                        <span class="logo-icon"><i class="fa-solid fa-cloud-moon"></i></span>
+                        <span class="logo-text">BEERKANTS<span id="logo-sec-text">WEATHER</span></span>
+                    </a>
+                </div>
+                <div class="links">
+                    <ul class="links-group-container">
+                        <li class="link-item">
+                            <a href="index.html" class="link-item-content">
+                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="link-text">Ana Sayfa</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="inputBx">
+                        <button id="search-btn"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+                        <input type="text" id="searchBar" placeholder="Ara">
+                        <i class="fa-solid fa-xmark" id="delete-search"></i>
+                    </div>
+                </div>
+                <div class="user_action">
+                    <div class="login-side profile-btn">
+                        <a href="#" id="login-btn">
+                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                            <span class="login-btn">Üye Girişi</span>
+                        </a>
+                    </div>
+                    <div class="sign-side profile-btn">
+                        <a href="#" id="signup-btn">
+                            <span class="icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                            <span class="sign-btn">Üye Ol</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container text-center" >
+            <section id="weather-info" class="main__a">
+                <div class="deggree-info-box">
+                    <span class="deggree">15°C</span>
+                </div>
+                <div class="status-info-box">
+                    <span class="status">Güneşli</span>
+                </div>
+                <div class="area-info-box">
+                    <h2 class="area-info">İstanbul, TR</h2>
+                </div>
+                <div class="minmax-info-box">
+                    <span class="min-max">10°C / 15°C</span>
+                </div>
+                <div class="action-buttons">
+                    <button id="location-btn" class="action-btn"  type="button">Konumu Gör</button>
+                    <button type="button" id="stroll-btn" class="action-btn">Gezilecek Yerler</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
